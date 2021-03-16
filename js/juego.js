@@ -1,4 +1,4 @@
-const distribucion = 6;
+const distribucion = 5;
 var ngramas = {};
 
 
@@ -16,8 +16,6 @@ function markovv() {
     console.log(ngramas);
 }
 
-
-
 function markov() {
     var posibilidadesArray;
     var posiSigLetra;
@@ -26,7 +24,7 @@ function markov() {
     var ngramaActual = txt.substring(0, distribucion);
     var resultado = ngramaActual;
 
-    for (var i = 0; i < 45; i++) {
+    for (var i = 0; i < 0.5; i++) {
         posibilidadesArray = ngramas[ngramaActual];
         posSigLetra = Math.floor(Math.random() * posibilidadesArray.length);
         letraSiguiente = posibilidadesArray[posSigLetra];
